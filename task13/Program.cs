@@ -5,9 +5,13 @@
 
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-string numlenght = Convert.ToString();
-if (numlenght < 3) Console.WriteLine ("-> Третьей цифры нет!");
-else 
+if (num < 100) Console.WriteLine("Третьей цифры нет!");
+else
 {
-  Console.Write ("-> " + numlenght[2]);
+while (num > 999)
+{
+  num = num / 10;
+}
+int num1 = num % 10;
+Console.Write(num1);
 }
